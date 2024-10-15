@@ -1,4 +1,4 @@
-new Splide(".splide",{
+document.addEventListener('DOMContentLoaded', function () {new Splide(".splide",{
     type:"loop",
     perPage:3,
     gap:48,
@@ -20,7 +20,7 @@ new Splide(".splide",{
     },
     
   }).mount();
-  
+});
   
   // スムーススクロール
   //href属性の「#」で始まるリンクを全て取得

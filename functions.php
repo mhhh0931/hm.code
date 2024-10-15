@@ -45,10 +45,31 @@ function enqueue_scripts()
     }
 
     //js
+  
+
+      function splide_scripts() {
+        // CSSの読み込み
+        wp_enqueue_style(
+            'splide-css',
+            'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'
+        );
+ 
+        // JavaScriptの読み込み
+        wp_enqueue_script(
+            'splide-js',
+            'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js',
+            array('jquery'),
+            null,
+            true // フッターで読み込む
+        );
+ 
+        // 他のスタイルやスクリプトの読み込み...
+    }
+
     wp_enqueue_script(
       'main-js', 
       get_stylesheet_directory_uri() . '/assets/js/main.js', 
-      array( 'jquery' ),
+      array( 'splide-js' ),
        '', 
        true
       );
