@@ -17,11 +17,11 @@ function enqueue_scripts()
     );
 
     // front-pageページのみ読み込むファイル
-    if (((is_front_page() && is_home()) || (is_front_page() && ! is_home())) && ! is_paged()) {
+    if (((is_front_page() && is_home()) || (is_front_page() && !is_home())) && !is_paged()) {
       wp_enqueue_style(
         'front-page', // front-pageという名前を設定
         get_template_directory_uri().'/assets/styles/front-page.css', // パス
-        array('global'), // global.cssより後に読み込む
+        array('global')// global.cssより後に読み込む
       );
     }
 
@@ -31,7 +31,7 @@ function enqueue_scripts()
       wp_enqueue_style(
         'works', // worksという名前を設定
         get_template_directory_uri().'/assets/styles/works.css', // パス
-        array('global'), // global.cssより後に読み込む
+        array('global') // global.cssより後に読み込む
       );
     }
 
@@ -40,7 +40,7 @@ function enqueue_scripts()
       wp_enqueue_style(
         'single', // singleという名前を設定
         get_template_directory_uri().'/assets/styles/single.css', // パス
-        array('global'), // global.cssより後に読み込む
+        array('global') // global.cssより後に読み込む
       );
     }
 
