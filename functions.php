@@ -12,6 +12,8 @@ function enqueue_scripts()
       'global', // globalという名前を設定
       get_template_directory_uri().'/assets/styles/global.css', // パス
       array(), // style.cssより先に読み込むCSSは無いので配列は空
+      '',
+      'all'
     );
 
     // front-pageページのみ読み込むファイル
@@ -41,6 +43,17 @@ function enqueue_scripts()
         array('global'), // global.cssより後に読み込む
       );
     }
+
+    //js
+    wp_enqueue_script(
+      'main-js', 
+      get_stylesheet_directory_uri() . '/assets/js/main.js', 
+      array( 'jquery' ),
+       '', 
+       true
+      );
+
+
 
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
