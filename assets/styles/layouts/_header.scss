@@ -1,3 +1,141 @@
 /** @format */
 
 @use "../global/" as g;
+
+.header {
+    height: 80px;
+    background-color: $maincolor;
+    color: $basecolor;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+   
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px;
+    align-items: center;
+    @include mediaQuery(tab){
+        padding: 16px 32px;
+      }
+}
+
+.logo-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navigation{
+    @include mediaQuery(tab){
+        display: none;
+      }
+}
+
+.navigation__list{
+    display: flex;
+    gap: 24px;
+    line-height: 24px;
+}
+
+.navigation__item{
+    position: relative;
+    display: inline-block;
+}
+
+.navigation__item::after{
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $basecolor;
+        bottom: -2px;               /*アンダーラインがaタグの下端から現れる*/
+        transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+        transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+        transition: transform 0.3s; /*変形の時間*/
+        }
+        
+.navigation__item:hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+    }
+
+    .hamburger{
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    z-index: 30px;
+    background: $maincolor;
+    transition: all 0.6s;
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+
+    @include mediaQuery(tab){
+        display: block;
+      }
+}
+
+.hamburger span{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 3px;
+    background-color: $basecolor;
+    transition: all 0.6s ;
+    border-radius: 2px;
+    margin: 10px;
+  }
+
+  .hamburger span:nth-child(1){
+    top:20px;
+}
+
+.hamburger span:nth-child(2){
+    top: 32px;
+}
+
+.hamburger span:nth-child(3){
+    top:44px;
+}
+
+.open.hamburger span:nth-child(1){
+       
+    transform: translateY(12px) rotate(45deg);
+   
+}
+
+.open.hamburger span:nth-child(2){
+    opacity: 0;
+
+}
+
+.open.hamburger span:nth-child(3){
+    
+    transform: translateY(-12px) rotate(-45deg);
+    
+} 
+
+.hamburger__navigation{
+    display: none;
+    text-align: center;
+    background-color: $maincolor;
+    transition: all 1s ease-in-out;
+    z-index: 11;
+    line-height: 3;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding: 30px 20px;
+    width: 100vw;
+    height: 100vh;
+
+}
+.add.hamburger__navigation{
+    display: block;
+}
