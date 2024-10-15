@@ -62,7 +62,7 @@
         
               <section id="service">
                 <div class="service__wapper">
-                　　<img src="<?php echo get_template_directory_uri(); ?>assets/img/common/15349.png" alt="">
+                　　<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/15349.png" alt="">
                     <h2 class="service__title">Service</h2>
                     <p class="service__subtitle">-できること-</p>
                     
