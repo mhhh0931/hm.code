@@ -1,3 +1,15 @@
 /** @format */
 
 @use "config" as g;
+
+$breakPoint: (
+    sp: 'screen and (max-width: 600px)',
+  tab: 'screen and (max-width: 767px)',
+  max:'screen and (max-width: 980px)'
+);
+// mixinを定義
+@mixin mediaQuery($bp) {
+  @media #{map-get($breakPoint, $bp)} { // マップとキーを取得
+    @content;
+  }
+}
