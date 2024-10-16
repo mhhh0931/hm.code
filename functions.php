@@ -11,7 +11,7 @@ function enqueue_scripts()
     wp_enqueue_style(
       'global', // globalという名前を設定
       get_template_directory_uri().'/assets/styles/global.css', // パス
-      array(), // style.cssより先に読み込むCSSは無いので配列は空
+      array('splide-css'), // style.cssより先に読み込むCSSは無いので配列は空
       '',
       'all'
     );
