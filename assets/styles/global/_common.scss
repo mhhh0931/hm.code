@@ -3,6 +3,6 @@
 @use "config" as g;
 
 // どのページにも適用する処理を記述
-// body {
-//   color: g.$font-color;
-// }
+body {
+  color: g.$accentcolor;
+}

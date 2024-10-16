@@ -5,7 +5,7 @@
 
 .header {
     height: 80px;
-    background-color: g.g.$maincolor;
+    background-color: g.$maincolor;
     color: g.$basecolor;
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@
     justify-content: space-between;
     padding: 16px 64px;
     align-items: center;
-    @include mediaQuery(tab){
+    @include g.breakPoint("tab"){
         padding: 16px 32px;
       }
 }
@@ -30,7 +30,7 @@
 }
 
 .navigation{
-    @include mediaQuery(tab){
+    @include g.breakPoint("tab"){
         display: none;
       }
 }
@@ -52,7 +52,7 @@
         content: '';
         width: 100%;
         height: 2px;
-        background: g.g.$basecolor;
+        background: g.$basecolor;
         bottom: -2px;               /*アンダーラインがaタグの下端から現れる*/
         transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
         transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
@@ -75,7 +75,7 @@
     cursor: pointer;
     display: none;
 
-    @include mediaQuery(tab){
+    @include g.breakPoint("tab"){
         display: block;
       }
 }

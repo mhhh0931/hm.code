@@ -2,3 +2,10 @@
 $basecolor:#fbfbfb;
 $maincolor:#558A86;
 $accentcolor:#0F0A01;
+
+
+$breakPoints: (
+    "sp": 'screen and (max-width: 600px)',
+  "tab": 'screen and (max-width: 767px)',
+  "max":'screen and (max-width: 980px)'
+);
