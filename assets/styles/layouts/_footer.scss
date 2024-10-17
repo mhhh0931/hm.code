@@ -1,3 +1,19 @@
 /** @format */
 
 @use "../global/" as g;
+
+
+.footer{
+    height: 40px;
+    background-color: g.$maincolor;
+    color: g.$basecolor;
+    width: 100%;
+    margin-top: 120px;
+    display: block;
+    align-content: center;
+}
+
+.footer__copyright{
+    font-size: 10px;
+    text-align: center;
+}

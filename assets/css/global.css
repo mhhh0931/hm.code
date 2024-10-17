@@ -536,6 +536,21 @@ th {
 
 /** @format */
 /** @format */
+.footer {
+  height: 40px;
+  background-color: #558A86;
+  color: #fbfbfb;
+  width: 100%;
+  margin-top: 120px;
+  display: block;
+  align-content: center;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  text-align: center;
+}
+
 /** @format */
 /* Slider */
 .slick-loading .slick-list {
