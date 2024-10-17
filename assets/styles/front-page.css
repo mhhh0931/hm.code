@@ -604,6 +604,10 @@ th {
   text-align: left;
 }
 
+.service__wapper {
+  margin: 0 50px;
+}
+
 .service__button {
   margin-top: 56px;
   display: inline-block;
