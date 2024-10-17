@@ -44,28 +44,6 @@ function enqueue_scripts()
       );
     }
 
-    //js
-  
-
-      function splide_scripts() {
-        // CSSの読み込み
-        wp_enqueue_style(
-            'splide-css',
-            'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'
-        );
- 
-        // JavaScriptの読み込み
-        wp_enqueue_script(
-            'splide-js',
-            'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js',
-            array('jquery'),
-            null,
-            true // フッターで読み込む
-        );
- 
-        // 他のスタイルやスクリプトの読み込み...
-    }
-
     wp_enqueue_script(
       'main-js', 
       get_stylesheet_directory_uri() . '/assets/js/main.js', 
@@ -73,12 +51,35 @@ function enqueue_scripts()
        '', 
        true
       );
+    }
+    
+    add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
+    
 
+  /**
+ * SplideのCSSとJSを読み込む
+ */
+  
 
-}
-add_action('wp_enqueue_scripts', 'enqueue_scripts');
-
+      function splide_scripts() {
+        // SplideのCSSの読み込み
+        wp_enqueue_style(
+            'splide-css',
+            'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'
+        );
+         // SplideのJavaScript
+        
+         wp_enqueue_script(
+          'splide-js',
+          'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js',
+          array('jquery'), // jQueryを依存関係として指定
+          null,
+          true // フッターで読み込む
+      );
+  }
+  add_action('wp_enqueue_scripts', 'splide_scripts');
+  
 
 /**
  * アイキャッチ画像を使用可能にする
