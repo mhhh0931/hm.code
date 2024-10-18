@@ -223,6 +223,11 @@
     margin: 0 50px;
 }
 
+.service__main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .service__button {
     margin-top: 56px;
     display: inline-block;
