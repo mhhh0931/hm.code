@@ -27,7 +27,7 @@
                 <ul class="navigation__list">
                     <li  class="navigation__item"><a href="#">Home</a></li>
                     <li  class="navigation__item"><a href="<?php echo esc_url(home_url('/works/')); ?>">Works</a></li>
-                    <li  class="navigation__item"><a href="#">Service</a></li>
+                    <li  class="navigation__item"><a href="#service">Service</a></li>
                     <li  class="navigation__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">Price</a></li>
                     <li  class="navigation__item"><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
                     <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icons8-インスタグラム-48 (2) 1.png" alt=""></a></li>
