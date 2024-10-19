@@ -24,6 +24,7 @@
     while ($the_query->have_posts()) : $the_query->the_post();?>
     <li class="list__content--item">
         <a href="<?php echo get_permalink(); ?>">
+            <?php the_post_thumbnail(); ?>
         <?php the_title(); ?>
         </a>
 //コンテンツ

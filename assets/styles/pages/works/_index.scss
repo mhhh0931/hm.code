@@ -1,0 +1,107 @@
+#list{
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.list__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $accentcolor;
+}
+
+.list__subtitle {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.list__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+
+    @include mediaQuery(tab){
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+      }
+
+      @include mediaQuery(sp){
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+      }
+    }
+
+    .list__content--item:hover{
+        opacity: .8;
+        transition: all 0.3s;
+    }
+
+
+    .list__content--text {
+        margin-top: 8px;
+        @include mediaQuery(sp){
+            margin-bottom: 10px;
+          }
+    }
+
+    .pic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: #fefefe;
+        gap: 1rem;
+    }
+    
+    .pagination {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        text-align: center;
+        padding-top: 16px;
+    }
+    
+    
+    .pagination a {
+        display: inline-block;
+        color: $accentcolor;
+        border-radius: 50%;
+        border: 1px solid #dedede;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    
+    .pagination i {
+        line-height: 40px;
+    }
+    
+    .pagination .active a {
+        background-color: $maincolor;
+        color: $basecolor;
+    }
+    
+    .pagination a:hover {
+        background-color:rgba(85,138,134,0.3);
+        color: $basecolor;
+        transition: all .3s;
+    }
+    
+    .pagination .disabled a {
+        pointer-events: none;
+        color: #ccc;
+    }
+    
+    .pagination .disabled a:hover {
+        background-color: initial;
+        color: #ccc;
+    }

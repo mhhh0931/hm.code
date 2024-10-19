@@ -1,9 +1,11 @@
+<!-- トップページを読み込む -->
+<!-- index.phpにも同じ内容を書くことを推奨 -->
 <!-- 主にトップページとして実装 -->
-
-    <main>
+<?php get_header(); ?>
+<main>
         <section class="mainvisual">
             <div class="mainvisual__item">
-                <img src="img\mainvisual.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/mainvisual.png" alt="">
                 <div class="mainvisual__text">
                     <h2 class="mainvisual__title">hm.code</h2>
                     <p class="mainvisual__p">Portfolio-site</p>
@@ -12,7 +14,7 @@
         </section> 
 
         <section id="works">
-            <img src="img\mouse_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/9161 1.png" alt="">
             <h2 class="works__title">Works</h2>
             <p class="works__subtitle">-実績-</p>
 
@@ -23,7 +25,7 @@
                   <ul class="splide__list">
                     <li class="splide__slide">
                         <a href="">
-                            <img src="img\image 41.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 41.png" alt="">
                             <p>FA EXHIBITION</p>
                         </a>
                      </li>
@@ -31,7 +33,7 @@
                         <a href="">
                             <a href="single\works-detail.html">
                                 
-                                <img src="img\image 37.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 37.png" alt="">
                                 <p>Furniture Design</p>
                                 
                             </a>
@@ -40,14 +42,14 @@
                     <li class="splide__slide">
                         <a href="">
 
-                            <img src="img\image 39.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 39.png" alt="">
                             <p>Sneakers</p>
                         </a>
                     </li>
                     <li class="splide__slide">
                         <a href="">
 
-                            <img src="img\スクリーンショット (72) 1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/スクリーンショット (72) 1.png" alt="">
                             <p>profile-site</p>
                         </a>
                     </li>
@@ -60,26 +62,28 @@
         
               <section id="service">
                 <div class="service__wapper">
-                　　<img src="img\デスクワークのフリー素材5.png" alt="">
+                    <div class="service__main">
+                　　<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/15349.png" alt="">
                     <h2 class="service__title">Service</h2>
                     <p class="service__subtitle">-できること-</p>
+                    </div>
                     
                     <div class="service__list">
                         <div class="service__item">
                             <h3 class="service__item--title">Webサイト/LPの制作</h3>
-                            <img src="img\21367.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/21367.png" alt="">
                             <p class="service__item--text">Wordpressによるオリジナルテーマや既存テーマを用いてコーポレートサイト、ランディングページの制作を行います。お客様からヒアリングした情報を元に目的に沿ったWebサイト制作を心がけます。</p>
                         </div>
                         <div class="service__item fade1">
                             <h3 class="service__item--title">コーディング</h3>
-                            <img src="img\17567 1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/17567 1.png" alt="">
                             <p class="service__item--text">ご用意いただいたデザインを確認しながら、コーディングを行います。
                                 また、お客様がスムーズに利用できる設計や、仕様になるようなWebサイト作りを行います。
                                 </p>
                         </div>
                         <div class="service__item fade2">
                             <h3 class="service__item--title">Webデザイン</h3>
-                            <img src="img\17623 1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/17623 1.png" alt="">
                             <p class="service__item--text">お客様よりヒアリングした内容に合わせ、Webサイトの目的、意図に沿ったデザインを作成します。
                                 また視認性や、ユーザビリティを意識したデザインを提案します。
                                 </p>
@@ -90,13 +94,13 @@
                 </section>
 
                 <section id="about">
-                    <img src="img\横顔アイコン 1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/20101.png" alt="">
                     <h2 class="about__title">About</h2>
                     <p class="about__subtitle">-私について-</p>
 
                     <div class="about__list">
                         <div class="about__item">
-                            <img src="img\xAfAcoSOFv87ODc1727616888_1727616895.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/xAfAcoSOFv87ODc1727616888_1727616895.png" alt="">
                         </div>
                         <div class="about__item">
                             <h3 class="about__name">
@@ -113,7 +117,7 @@
                 </section>
 
                 <section id="contact">
-                    <img src="img\メールの無料アイコンその21 1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/11207.png" alt="">
                     <h2 class="contact__title">Contact</h2>
                     <p class="contact__subtitle">-お問い合わせ-</p>
                     <div class="contact__text">
@@ -123,14 +127,5 @@
                     <button class="contact__button">Contact</button>
 
                 </section>
-
-                <footer class="footer">
-                    <h2 class="footer__copyright">&copy;Hm code</h2>
-                </footer>
-
-        
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="js\portfolio.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
+                
