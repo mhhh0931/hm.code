@@ -14,8 +14,6 @@
      'post_status' => 'publish',
      'paged' => $paged,
      'posts_per_page' => 4, // 表示件数
-     'orderby'     => 'date',
-     'order' => 'DESC',
      'post_type' => 'works'
  ) );
   
@@ -25,28 +23,30 @@
     <li class="list__content--item">
         <a href="<?php echo get_permalink(); ?>">
             <?php the_post_thumbnail(); ?>
-        <?php the_title(); ?>
+            <p class="list__content--text"><?php the_title(); ?></p>
         </a>
-//コンテンツ
 <?php endwhile; ?>
 <?php endif; ?>
 <!-- pagenation -->
+ </section>
 <div class="pagenation">
 <?php 
 if ($the_query->max_num_pages > 1) {
     echo paginate_links(array(
         'base' => get_pagenum_link(1) . '%_%',
         'format' => 'page/%#%/',
-        'current' => max(1, $paged),
+        'current' =>0,
         'mid_size' => 1,
-        'total' => $the_query->max_num_pages
+        'total' => $the_query->max_num_pages,
+        'prev_text' => '<',
+        'next_text' => '>'
     ));
 }
-wp_reset_postdata();?>
-</div><!-- /pagenation -->
-            
+wp_reset_postdata();
+?>
+</div>
 
-</section>
+
  </main>
 
  <?php get_footer(); ?>

@@ -427,7 +427,7 @@ th {
 }
 
 .list__content--item:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: all 0.3s;
 }
 
@@ -451,7 +451,7 @@ th {
   gap: 1rem;
 }
 
-.pagination {
+.pagenation {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
@@ -459,7 +459,7 @@ th {
   padding-top: 16px;
 }
 
-.pagination a {
+.pagenation a {
   display: inline-block;
   color: #0F0A01;
   border-radius: 50%;
@@ -471,27 +471,27 @@ th {
   text-align: center;
 }
 
-.pagination i {
+.pagenation i {
   line-height: 40px;
 }
 
-.pagination .active a {
+.pagenation .active a {
   background-color: #558A86;
   color: #fbfbfb;
 }
 
-.pagination a:hover {
+.pagenation a:hover {
   background-color: rgba(85, 138, 134, 0.3);
   color: #fbfbfb;
   transition: all 0.3s;
 }
 
-.pagination .disabled a {
+.pagenation .disabled a {
   pointer-events: none;
   color: #ccc;
 }
 
-.pagination .disabled a:hover {
+.pagenation .disabled a:hover {
   background-color: initial;
   color: #ccc;
 }/*# sourceMappingURL=works.css.map */
