@@ -15,7 +15,7 @@
         <div class="header__content">
 
             <h1 class="logo-title">
-               <a href="">Hm.code</a>
+               <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hm.code</a>
             </h1>
 
             <div class="hamburger">
@@ -25,7 +25,7 @@
             </div>
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li  class="navigation__item"><a href="#">Home</a></li>
+                    <li  class="navigation__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
                     <li  class="navigation__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/works">Works</a></li>
                     <li  class="navigation__item"><a href="#service">Service</a></li>
                     <li  class="navigation__item"><a href="<?php echo esc_url(home_url('/price/')); ?>">Price</a></li>
