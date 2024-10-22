@@ -130,7 +130,7 @@
     align-items: center;
     margin-bottom: 56px;
     opacity: 0;
-    visibility: hidden;
+    // visibility: hidden;
     transition: all 1s ease-out;
     transform: translateY(150px);
     @include g.breakPoint(tab){

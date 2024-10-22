@@ -32,6 +32,14 @@ function enqueue_scripts()
         );
     }
 
+    if (is_page('price')) {
+      wp_enqueue_style(
+          'price', // priceという名前を設定
+          get_template_directory_uri().'/assets/styles/price.css', // パス
+          array('global') // global.cssより後に読み込む
+      );
+  }
+
     // 通常の投稿のシングルページにだけ適用したい処理
     if (is_single()) {
         wp_enqueue_style(
@@ -49,6 +57,15 @@ function enqueue_scripts()
         '', 
         true // フッターで読み込む
     );
+
+     // JSの読み込み
+     wp_enqueue_script(
+      'main-js', 
+      get_stylesheet_directory_uri() . '/assets/js/page.js', 
+      array('splide-js'), // splide-jsを依存関係として追加
+      '', 
+      true // フッターで読み込む
+  );
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 

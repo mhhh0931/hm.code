@@ -11,7 +11,7 @@
                 <h3 class="price__item--title">
                     Webサイト/LPの制作
                 </h3>
-                <img src="..\img\21367.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/21367.png" alt="">
                 <div class="price__item--content">
                     <p class="price__item--content--left">
                         Wordpressによるオリジナルテーマや既存テーマを用いてコーポレートサイト、ランディングページの制作を行います。お客様からヒアリングした情報を元に目的に沿ったWebサイト制作を心がけます。
@@ -36,7 +36,7 @@
                     <h3 class="price__item--title">
                         コーディング
                     </h3>
-                    <img src="..\img\17567 1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/17567 1.png" alt="">
                     <div class="price__item--content">
                         <p class="price__item--content--left">
                             ご用意いただいたデザインを確認しながら、コーディングを行います。
@@ -61,7 +61,7 @@
                         <h3 class="price__item--title">
                             Webデザイン
                         </h3>
-                        <img src="..\img\17623 1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/17623 1.png" alt="">
                         <div class="price__item--content">
                             <p class="price__item--content--left">
                                 お客様よりヒアリングした内容に合わせ、Webサイトの目的、意図に沿ったデザインを作成します。また視認性や、ユーザビリティを意識したデザインを提案します。
@@ -92,7 +92,7 @@
                     <div class="flow__list">
                         <div class="flow__item--img">
                              <div class="flow__item--circle">
-                                 <img src="..\img\11213 1.png" alt="">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/11213 1.png" alt="">
                              </div>
                          </div>
                          <div class="flow__item--text">
@@ -103,7 +103,7 @@
                     <div class="flow__list">
                          <div class="flow__item--img">
                              <div class="flow__item--circle">
-                                <img src="..\img\16774 1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/16774 1.png" alt="">
                               </div>
                           </div>
                 
@@ -116,7 +116,7 @@
                     <div class="flow__list">
                         <div class="flow__item--img">
                             <div class="flow__item--circle">
-                               <img src="..\img\21339 1.png" alt="">
+                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/21339 1.png" alt="">
                              </div>
                          </div>
                
@@ -131,7 +131,7 @@
                     <div class="flow__list">
                         <div class="flow__item--img">
                             <div class="flow__item--circle">
-                               <img src="..\img\17567 3.png" alt="">
+                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/17567 3.png" alt="">
                              </div>
                          </div>
                
@@ -146,7 +146,7 @@
                     <div class="flow__list">
                         <div class="flow__item--img">
                             <div class="flow__item--circle">
-                               <img src="..\img\16230 (1) 1.png" alt="">
+                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/16230 (1) 1.png" alt="">
                              </div>
                          </div>
                
@@ -160,7 +160,7 @@
                     <div class="flow__list">
                         <div class="flow__item--img">
                             <div class="flow__item--circle">
-                               <img src="..\img\16780 (1) 1.png" alt="">
+                               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/price/16780 (1) 1.png" alt="">
                              </div>
                          </div>
                
