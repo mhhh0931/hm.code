@@ -7,7 +7,7 @@
     <h2 class="list__title">Works</h2>
     <p class="list__subtitle">-実績-</p>
 
-    <ul class="list__content">
+<ul class="list__content">
     <?php
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $the_query = new WP_Query( array(
@@ -21,7 +21,7 @@
     ?>
         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <li class="list__content--item">
-                <a href="<?php echo get_permalink(); ?>">
+            <a href="<?php the_permalink(); ?>">
                     <div><?php the_post_thumbnail(); ?></div>
                     <p class="list__content--text"><?php the_title(); ?></p>
                 </a>

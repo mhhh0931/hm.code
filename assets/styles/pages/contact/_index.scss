@@ -1,0 +1,49 @@
+@use "../../global/"  as g;
+
+#contact__page{
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 200px;
+
+}
+.contact__wapper{
+    margin: 0px 150px;
+    @include g.breakPoint(tab){
+        margin: 0px 100px;
+      }
+}
+
+.contact__container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    /* margin-bottom: 16px; */
+}
+.contact__form--label {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.contact__form--label::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 16px;
+    background-color: g.$maincolor;
+    left: -10px;
+    
+
+}
+
+.contact__form--control {
+    border: 2px solid #558A86;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+textarea#contact__form--control {
+    height: 80px;
+}
