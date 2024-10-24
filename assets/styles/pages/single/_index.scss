@@ -1,0 +1,85 @@
+@use "../../global/"  as g;
+
+#detail{
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.detail__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: g.$accentcolor;
+}
+
+.detail__subtitle {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.detail__list {
+    display: flex;
+    gap: 16px;
+
+    @include g.breakPoint(max){
+        flex-direction: column;
+        margin: 0px 50px;
+      }
+}
+
+.detail__img {
+    position: relative;
+}
+
+.detail__text {
+    position: absolute;
+    font-size: 10px;
+    top: 85%;
+    left: 50%;
+}
+
+.detail__content {
+    text-align: left;
+    padding-top: 56px;
+    @include g.breakPoint(max){
+        margin: 0px 100px;
+      }
+}
+
+.detail__content--title {
+    font-size: 24px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.detail__content--title::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 25px;
+    background-color: g.$maincolor;
+    left: -10px;
+
+}
+
+.detail__content--text {
+    margin-bottom: 24px;
+}
+
+.detail__button {
+    margin-top: 56px;
+    display: inline-block;
+    border: 3px solid g.$maincolor;
+    color: g.$accentcolor;
+    padding: 16px 60px;
+    letter-spacing: 3px;
+}
+
+.detail__button:hover{
+    background-color: g.$maincolor;
+    color: g.$basecolor;
+    transition: 0.7s;
+}
