@@ -8,25 +8,27 @@
     <p class="list__subtitle">-実績-</p>
 
     <ul class="list__content">
-        <?php
- $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
- $the_query = new WP_Query( array(
-     'post_status' => 'publish',
-     'paged' => $paged,
-     'posts_per_page' => 4, // 表示件数
-     'post_type' => 'works'
- ) );
-  
-  
- if ($the_query->have_posts()) :?><?php
-    while ($the_query->have_posts()) : $the_query->the_post();?>
-    <li class="list__content--item">
-        <a href="<?php echo get_permalink(); ?>">
-           <div> <?php the_post_thumbnail(); ?></div>
-            <p class="list__content--text"><?php the_title(); ?></p>
-        </a>
-<?php endwhile; ?>
-<?php endif; ?>
+    <?php
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $the_query = new WP_Query( array(
+        'post_status' => 'publish',
+        'paged' => $paged,
+        'posts_per_page' => 4, // 表示件数
+        'post_type' => 'works'
+    ));
+
+    if ($the_query->have_posts()) : 
+    ?>
+        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <li class="list__content--item">
+                <a href="<?php echo get_permalink(); ?>">
+                    <div><?php the_post_thumbnail(); ?></div>
+                    <p class="list__content--text"><?php the_title(); ?></p>
+                </a>
+            </li>
+        <?php endwhile; ?>
+    <?php endif; ?>
+</ul>
 <!-- pagenation -->
  </section>
 <div class="pagenation">
