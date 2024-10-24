@@ -23,36 +23,18 @@
 
                 <div class="splide__track">
                   <ul class="splide__list">
-                    <li class="splide__slide">
-                        <a href="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 41.png" alt="">
-                            <p>FA EXHIBITION</p>
-                        </a>
-                     </li>
-                    <li class="splide__slide">
-                        <a href="">
-                            <a href="single\works-detail.html">
-                                
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 37.png" alt="">
-                                <p>Furniture Design</p>
-                                
-                            </a>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a href="">
-
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/image 39.png" alt="">
-                            <p>Sneakers</p>
-                        </a>
-                    </li>
-                    <li class="splide__slide">
-                        <a href="">
-
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/スクリーンショット (72) 1.png" alt="">
-                            <p>profile-site</p>
-                        </a>
-                    </li>
+                  <?php if( have_posts() ): ?>
+　                    <?php while( have_posts() ) : the_post() ?>
+                         <li class="splide__slide">
+                             <a href="<?php the_permalink();?>">
+                                 <img src="<?php echo the_post_thumbnail(); ?>" alt="">
+                                 <p><?php the_title();?></p>
+                                </a>
+　　
+                            </li>
+　                    <?php endwhile; ?>
+                    <?php endif; ?>
+                    
                   </ul>
                 </div>
                 <ul class="splide__pagination"></ul>
