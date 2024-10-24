@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */
 body {
   color: #0F0A01;
@@ -395,11 +396,11 @@ th {
 }
 
 .contact__wapper {
-  margin: 0px 150px;
+  margin: 0px 100px;
 }
 @media screen and (max-width: 767px) {
   .contact__wapper {
-    margin: 0px 100px;
+    margin: 0px 50px;
   }
 }
 
@@ -426,12 +427,53 @@ th {
   left: -10px;
 }
 
-.contact__form--control {
-  border: 2px solid #558A86;
-  margin-bottom: 16px;
-  padding: 10px;
+.wpcf7 {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-textarea#contact__form--control {
-  height: 80px;
+.wpcf7-form {
+  padding: 1.5rem;
+}
+
+.wpcf7 label, .wpcf7 input, .wpcf7 textarea {
+  font-size: 16px;
+}
+
+.wpcf7 label {
+  font-weight: bold;
+  color: #0F0A01;
+}
+
+.wpcf7 input, .wpcf7 textarea {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 2px solid #558A86;
+  padding: 12px;
+  color: #0F0A01;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.wpcf7 textarea {
+  margin-bottom: 36px;
+}
+
+.wpcf7 input[type=submit] {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  background: #fbfbfb;
+  color: #0F0A01;
+  transition-property: all;
+  transition: 0.2s ease-in;
+}
+
+.wpcf7 input[type=submit]:hover {
+  background: #558A86;
+  border-color: #558A86;
+  color: #fbfbfb;
 }/*# sourceMappingURL=contact.css.map */

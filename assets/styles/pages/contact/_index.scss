@@ -8,9 +8,9 @@
 
 }
 .contact__wapper{
-    margin: 0px 150px;
+    margin: 0px 100px;
     @include g.breakPoint(tab){
-        margin: 0px 100px;
+        margin: 0px 50px;
       }
 }
 
@@ -38,12 +38,51 @@
 
 }
 
-.contact__form--control {
-    border: 2px solid #558A86;
-    margin-bottom: 16px;
-    padding: 10px;
-}
 
-textarea#contact__form--control {
-    height: 80px;
-}
+.wpcf7 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .wpcf7-form {
+    padding: 1.5rem;
+  }
+  
+  .wpcf7 label, .wpcf7 input, .wpcf7 textarea {
+    font-size: 16px;
+  }
+  
+  .wpcf7 label {
+    font-weight: bold;
+    color: g.$accentcolor;
+  }
+  
+  .wpcf7 input, .wpcf7 textarea {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 100%;
+    -webkit-appearance: none;
+            appearance: none;
+    border: 2px solid g.$maincolor;
+    padding: 12px;
+    color: g.$accentcolor;
+    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  }
+  .wpcf7 textarea{
+    margin-bottom: 36px;
+  }
+  .wpcf7 input[type="submit"] {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    background: g.$basecolor;
+    color: g.$accentcolor;
+    transition-property: all;
+    transition: 0.2s ease-in;
+  }
+  
+  .wpcf7 input[type="submit"]:hover {
+    background: g.$maincolor;
+    border-color: g.$maincolor;
+    color: g.$basecolor;
+  }

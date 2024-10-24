@@ -40,6 +40,15 @@ function enqueue_scripts()
       );
   }
 
+  if (is_page('contact')) {
+    wp_enqueue_style(
+        'contact', 
+        get_template_directory_uri().'/assets/styles/contact.css', // パス
+        array('global') // global.cssより後に読み込む
+    );
+}
+
+
     // 通常の投稿のシングルページにだけ適用したい処理
     if (is_single()) {
         wp_enqueue_style(
