@@ -578,21 +578,6 @@ th {
   line-height: 1.5;
 }
 
-.contact__button {
-  margin-top: 56px;
-  display: inline-block;
-  border: 3px solid #558A86;
-  color: #0F0A01;
-  padding: 16px 60px;
-  letter-spacing: 3px;
-}
-
-.contact__button:hover {
-  background-color: #558A86;
-  color: #fbfbfb;
-  transition: 0.7s;
-}
-
 /** @format */
 /* Slider */
 .slick-loading .slick-list {
