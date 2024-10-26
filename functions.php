@@ -49,7 +49,7 @@ function enqueue_scripts()
 }
 if (is_page('contact-confirm')) {
     wp_enqueue_style(
-        'contact', 
+        'contact-confirm', 
         get_template_directory_uri().'/assets/styles/contact-confirm.css', // パス
         array('global') // global.cssより後に読み込む
     );
@@ -57,8 +57,8 @@ if (is_page('contact-confirm')) {
 
 if (is_page('contact-thanks')) {
     wp_enqueue_style(
-        'contact', 
-        get_template_directory_uri().'/assets/styles/contact.css', // パス
+        'contact-thanks', 
+        get_template_directory_uri().'/assets/styles/contact-thanks.css', // パス
         array('global') // global.cssより後に読み込む
     );
 }
