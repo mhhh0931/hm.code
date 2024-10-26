@@ -21,7 +21,6 @@
 
 .detail__list {
     display: flex;
-    gap: 16px;
 
     @include g.breakPoint(max){
         flex-direction: column;
@@ -31,6 +30,7 @@
 
 .detail__img {
     position: relative;
+    width: 48%;
 }
 
 .detail__text {

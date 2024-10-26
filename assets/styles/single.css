@@ -408,7 +408,6 @@ th {
 
 .detail__list {
   display: flex;
-  gap: 16px;
 }
 @media screen and (max-width: 980px) {
   .detail__list {
@@ -419,6 +418,7 @@ th {
 
 .detail__img {
   position: relative;
+  width: 48%;
 }
 
 .detail__text {

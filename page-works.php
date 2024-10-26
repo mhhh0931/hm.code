@@ -13,8 +13,8 @@
     $the_query = new WP_Query( array(
         'post_status' => 'publish',
         'paged' => $paged,
-        'posts_per_page' => 4, // 表示件数
-        'post_type' => 'works'
+        'posts_per_page' => 6, // 表示件数
+        'category' => 'works'
     ));
 
     if ($the_query->have_posts()) : 
