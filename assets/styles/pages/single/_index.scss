@@ -43,8 +43,10 @@
 .detail__content {
     text-align: left;
     padding-top: 56px;
+    padding-right: 32px;
     @include g.breakPoint(max){
         margin: 0px 100px;
+        padding-right: 8px;
       }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */
 body {
   color: #0F0A01;
@@ -387,90 +388,77 @@ th {
   font-weight: bold;
 }
 
-#detail {
-  text-align: center;
-  max-width: 1080px;
-  margin: auto;
-  padding-top: 200px;
+.wpcf7 {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.detail__title {
-  font-size: 32px;
+.wpcf7-form {
+  padding: 1.5rem;
+}
+
+.wpcf7 label, .wpcf7 input, .wpcf7 textarea {
+  font-size: 16px;
+}
+
+.wpcf7 label {
   font-weight: bold;
   color: #0F0A01;
 }
 
-.detail__subtitle {
-  font-size: 16px;
-  line-height: 2;
-  margin-bottom: 40px;
-}
-
-.detail__list {
-  display: flex;
-}
-@media screen and (max-width: 980px) {
-  .detail__list {
-    flex-direction: column;
-    margin: 0px 50px;
-  }
-}
-
-.detail__img {
-  position: relative;
-  width: 48%;
-}
-
-.detail__text {
-  position: absolute;
-  font-size: 10px;
-  top: 85%;
-  left: 50%;
-}
-
-.detail__content {
-  text-align: left;
-  padding-top: 56px;
-  padding-right: 32px;
-}
-@media screen and (max-width: 980px) {
-  .detail__content {
-    margin: 0px 100px;
-    padding-right: 8px;
-  }
-}
-
-.detail__content--title {
-  font-size: 24px;
+.wpcf7 input, .wpcf7 textarea {
   margin-bottom: 8px;
-  position: relative;
-}
-
-.detail__content--title::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 3px;
-  height: 25px;
-  background-color: #558A86;
-  left: -10px;
-}
-
-.detail__content--text {
-  margin-bottom: 24px;
-}
-
-.detail__button {
-  margin-top: 56px;
-  display: inline-block;
-  border: 3px solid #558A86;
+  margin-top: 8px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 2px solid #558A86;
+  padding: 12px;
   color: #0F0A01;
-  padding: 16px 60px;
-  letter-spacing: 3px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
 
-.detail__button:hover {
-  background-color: #558A86;
+.wpcf7 textarea {
+  margin-bottom: 36px;
+}
+
+.contact__button--form {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+.wpcf7 input[type=submit] {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  background: #fbfbfb;
+  color: #0F0A01;
+  transition-property: all;
+  transition: 0.2s ease-in;
+  padding: 8px 64px;
+}
+
+.wpcf7 input[type=submit]:hover {
+  background: #558A86;
+  border-color: #558A86;
   color: #fbfbfb;
-  transition: 0.7s;
-}/*# sourceMappingURL=single.css.map */
+}
+
+.wpcf7 input[type=button] {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  background: #fbfbfb;
+  color: #0F0A01;
+  transition-property: all;
+  transition: 0.2s ease-in;
+  padding: 8px 64px;
+}
+
+.wpcf7 input[type=button]:hover {
+  background: #558A86;
+  border-color: #558A86;
+  color: #fbfbfb;
+}/*# sourceMappingURL=contact-confirm.css.map */
