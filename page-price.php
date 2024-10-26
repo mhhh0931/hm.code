@@ -3,8 +3,8 @@
 <?php get_header();?>
 <main>
 <section id="price">
-        <h2 class="price__title">Price</h2>
-        <p class="price__subtitle">-制作費-</p>
+        <h2 class="price__title"><?php the_title(); ?></h2>
+        <p class="price__subtitle">-<?php the_content(); ?>-</p>
 
         <div class="price__list">
             <div class="price__item">

@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 <main>
     <section id="detail">
-        <h2 class="detail__title">Works</h2>
-        <p class="detail__subtitle">-実績-</p>
+        <h2 class="detail__title"><?php the_title(); ?></h2>
+        <p class="detail__subtitle">-<?php the_content(); ?>-</p>
 
         <div class="detail__list">
             <?php if(have_posts()): ?>
@@ -37,7 +37,12 @@
         <?php endif; ?>
     </div>
 
-        <button class="detail__button">一覧に戻る</button>
+        <button class="detail__button">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/works">
+
+                一覧に戻る
+            </a>
+        </button>
 
  
 

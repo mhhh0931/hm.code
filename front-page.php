@@ -5,7 +5,7 @@
 <main>
         <section class="mainvisual">
             <div class="mainvisual__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/mainvisual.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pages/front-page/anete-lusina-zwsHjakE_iI-unsplash 1.png" alt="">
                 <div class="mainvisual__text">
                     <h2 class="mainvisual__title">hm.code</h2>
                     <p class="mainvisual__p">Portfolio-site</p>
@@ -39,7 +39,11 @@
                 </div>
                 <ul class="splide__pagination"></ul>
                 </div>
-                <button class="works__button">View More</button>
+                <button class="works__button">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/works">
+                        View More
+                    </a>
+                </button>
               </section>
         
               <section id="service">
@@ -72,7 +76,12 @@
                         </div>
                     </div>
                     </div>
-                    <button class="service__button">View More</button>
+                    <button class="service__button">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/price">
+
+                            View More
+                        </a>
+                    </button>
                 </section>
 
                 <section id="about">

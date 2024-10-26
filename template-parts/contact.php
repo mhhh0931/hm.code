@@ -7,7 +7,7 @@
             <p>2営業日以内にご返信いたします。</p>
         </div>
         <button class="contact__button">
-            <a href="">Contact</a>
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a>
         </button>
 
 </section>
