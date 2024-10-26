@@ -21,7 +21,7 @@
     </div>
         
     <button class="contact__thanks--button">
-            <a href="">HOMEに戻る</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOMEに戻る</a>
         </button>
 		 
   </div>
