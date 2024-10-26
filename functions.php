@@ -50,7 +50,7 @@ function enqueue_scripts()
 if (is_page('contact-confirm')) {
     wp_enqueue_style(
         'contact', 
-        get_template_directory_uri().'/assets/styles/contact.css', // パス
+        get_template_directory_uri().'/assets/styles/contact-confirm.css', // パス
         array('global') // global.cssより後に読み込む
     );
 }

@@ -73,26 +73,32 @@
     
   }
 
+  .multform {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
   .contact__button--form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 24px;
   }
   .wpcf7 input[type="submit"] {
     max-width: 200px;
     margin: 0 auto;
     display: block;
-    background: g.$basecolor;
-    color: g.$accentcolor;
+    background: g.$maincolor;
+    color: g.$basecolor;
     transition-property: all;
     transition: 0.2s ease-in;
     padding: 8px 64px;
   }
   
   .wpcf7 input[type="submit"]:hover {
-    background: g.$maincolor;
+    background: g.$basecolor;
     border-color: g.$maincolor;
-    color: g.$basecolor;
+    color: g.$accentcolor;
   }
 
   .wpcf7 input[type="button"] {
@@ -111,3 +117,5 @@
     border-color: g.$maincolor;
     color: g.$basecolor;
   } 
+
+  
