@@ -2,7 +2,7 @@
 <!-- 管理画面より、slug名「contact」で固定ページを投稿 -->
 <!-- 実装の参考：https://wp-master.club/view-contact-form7 -->
 
-<?php get_header();?>
+<?php get_header('custom');?>
 
 <main>
     <section id="contact__page">

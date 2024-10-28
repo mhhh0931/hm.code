@@ -1,6 +1,6 @@
 <!-- 固定ページ：priceページ -->
 <!-- 管理画面より、slug名「about」で固定ページを投稿 -->
-<?php get_header();?>
+<?php get_header('custom');?>
 <main>
 <section id="price">
         <h2 class="price__title"><?php the_title(); ?></h2>
