@@ -3,8 +3,8 @@
 <?php get_header(); ?>
 <main>
     <section id="detail">
-        <h2 class="detail__title"><?php the_title(); ?></h2>
-        <p class="detail__subtitle">-<?php the_content(); ?>-</p>
+        <h2 class="detail__title">Works</h2>
+        <p class="detail__subtitle">-Works-</p>
 
         <div class="detail__list">
             <?php if(have_posts()): ?>
