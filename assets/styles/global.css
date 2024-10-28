@@ -5,6 +5,10 @@
 /** @format */
 body {
   color: #0F0A01;
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /** @format */

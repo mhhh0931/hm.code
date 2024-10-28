@@ -4,7 +4,7 @@
 <main>
 <section id="price">
         <h2 class="price__title"><?php the_title(); ?></h2>
-        <p class="price__subtitle">-<?php the_content(); ?>-</p>
+        <p class="price__subtitle">-製作費-</p>
 
         <div class="price__list">
             <div class="price__item">
