@@ -4,7 +4,7 @@
 <main>
     <section id="detail">
         <h2 class="detail__title">Works</h2>
-        <p class="detail__subtitle">-Works-</p>
+        <p class="detail__subtitle">-実績-</p>
 
         <div class="detail__list">
             <?php if(have_posts()): ?>
