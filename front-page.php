@@ -40,7 +40,7 @@
                 <ul class="splide__pagination"></ul>
                 </div>
                 <button class="works__button">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/works">
+                    <a href="<?php echo esc_url( home_url( '/works/') ); ?>">
                         View More
                     </a>
                 </button>

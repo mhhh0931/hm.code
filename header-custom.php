@@ -2,26 +2,24 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title><?php bloginfo();?></title>
-    <meta charset="UTF-8">
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<title><?php bloginfo();?></title>
+<meta charset="UTF-8">
+<meta name="description" content="<?php bloginfo( 'description' ); ?>" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/common/Simple Minimalist Circle Typography Business Logo 1.png">
-    <?php wp_head(); ?>
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/common/Simple Minimalist Circle Typography Business Logo 1.png">
+<?php wp_head(); ?>
 </head>
 <body>
     <header class="header">
         <div class="header__content">
-
             <h1 class="logo-title">
                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hm.code</a>
             </h1>
-
             <div class="hamburger">
                 <span></span> 
                 <span></span>
@@ -50,6 +48,4 @@
                 </ul>
             </nav>
         </div>
-
-         
-    </header>
+</header>

@@ -298,11 +298,14 @@
 
 .about__item:nth-child(1){
     width: 80%;
+    @include g.breakPoint("sp"){
+     width: auto;
+      }
 }
 
 .about__item{
     @include g.breakPoint("tab"){
-        padding: 0px 50px;
+        padding: 0px;
         }
 }
 

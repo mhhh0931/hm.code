@@ -582,6 +582,11 @@ th {
   letter-spacing: 2px;
   line-height: 1.5;
 }
+@media screen and (max-width: 767px) {
+  .contact__text {
+    padding: 0px 20px;
+  }
+}
 
 .contact__button {
   margin-top: 56px;

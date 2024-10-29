@@ -686,10 +686,15 @@ th {
 .about__item:nth-child(1) {
   width: 80%;
 }
+@media screen and (max-width: 600px) {
+  .about__item:nth-child(1) {
+    width: auto;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .about__item {
-    padding: 0px 50px;
+    padding: 0px;
   }
 }
 
