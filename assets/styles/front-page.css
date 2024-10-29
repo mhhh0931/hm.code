@@ -399,7 +399,6 @@ th {
 
 .mainvisual__item img {
   width: 100%;
-  margin-top: 80px;
 }
 
 .mainvisual__text {
@@ -418,8 +417,8 @@ th {
 }
 @media screen and (max-width: 767px) {
   .mainvisual__text {
-    font-size: 40px;
-    padding: 0px 80px;
+    font-size: 24px;
+    padding: 20px 30px;
   }
 }
 
@@ -428,7 +427,7 @@ th {
 }
 @media screen and (max-width: 767px) {
   .mainvisual__p {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 
