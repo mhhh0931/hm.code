@@ -9,6 +9,9 @@
 
 .mainvisual__item img{
     width: 100%;
+    @include g.breakPoint("tab"){
+      height: 100vh;
+      }
 }
 
 .mainvisual__text{
@@ -99,7 +102,10 @@
   .splide__arrow{
     background: g.$maincolor;
   }
-
+  .splide__arrow.splide__arrow--next {
+    position: absolute;
+    right: -3px;
+}
   
   .splide__pagination__page.is-active{
     color: g.$maincolor;

@@ -40,7 +40,7 @@
                 <ul class="hamburger__navigation--list">
                     <li  class="hamburger__navigation--item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
                     <li  class="hamburger__navigation--item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/works">Works</a></li>
-                    <li  class="hamburger__navigation--item"><a href="#">Service</a></li>
+                    <li  class="hamburger__navigation--item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Service</a></li>
                     <li  class="hamburger__navigation--item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/price">Price</a></li>
                     <li  class="hamburger__navigation--item"><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
                     <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/icons8-インスタグラム-48 (2) 1.png" alt=""></a></li>
