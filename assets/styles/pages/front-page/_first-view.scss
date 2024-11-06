@@ -101,6 +101,12 @@
 
   .splide__arrow{
     background: g.$maincolor;
+      height: 50px;
+      opacity: 0.4;
+      justify-content: center;
+      position: absolute;
+      right: -10px;
+  
   }
   .splide__arrow.splide__arrow--next {
     position: absolute;
