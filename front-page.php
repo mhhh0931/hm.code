@@ -23,9 +23,9 @@
 
                 <div class="splide__track">
                   <ul class="splide__list">
-                  <?php if( have_posts() ): ?>
-　                    <?php while( have_posts() ) : the_post() ?>
-                         <li class="splide__slide">
+                      <?php if( have_posts() ): ?>
+                        <?php while( have_posts() ) : the_post() ?>
+                        <li class="splide__slide">
                              <a href="<?php the_permalink();?>">
                                  <?php echo the_post_thumbnail(); ?>
                                  <p><?php the_title();?></p>
