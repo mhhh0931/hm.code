@@ -10,7 +10,8 @@
 .mainvisual__item img{
     width: 100%;
     @include g.breakPoint("tab"){
-      height: 100vh;
+      width: 100%;
+     height: 50vh;
       }
 }
 
@@ -102,6 +103,7 @@
   .splide__arrow{
     background: g.$maincolor;
       height: 50px;
+      width: 50px;
       opacity: 0.4;
       justify-content: center;
       position: absolute;
