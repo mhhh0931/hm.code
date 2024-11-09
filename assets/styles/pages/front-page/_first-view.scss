@@ -9,10 +9,16 @@
 
 .mainvisual__item img{
     width: 100%;
+    height: 300px; // 固定の高さを設定
+    width: 100%;
+    object-fit: cover; // アスペクト比を保ちながらカバー
+    opacity: .3;
+    transform: scale(.8);
+    transition: .7s;
     @include g.breakPoint("tab"){
-      width: 100%;
-     height: 50vh;
-      }
+        width: 80%;
+        height: 240px; // タブレット用の高さ
+    }
 }
 
 .mainvisual__text{

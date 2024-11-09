@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {new Splide(".splide",{
     type:"loop",
     perPage:3,
+    gap:48,
     pagenation:true,
-    autoHeight:true,
     speed: 1000, 
     focus  : "center",
-    updateOnMove: true, 
+    updateOnMove: true,
+    fixedWidth: '33%', // スライドの幅を固定
+    fixedHeight: 300, // スライドの高さを固定 
   
     classes: {
       pagination: "splide__pagination your-class-pagination",
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {new Splide(".splide",
     breakpoints: {
       780: {
         perPage: 1,
+        fixedWidth: '80%', // モバイル時の幅
+        fixedHeight: 240, // モバイル時の高さ
       },
     },
     
