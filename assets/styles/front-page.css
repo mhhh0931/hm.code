@@ -458,11 +458,14 @@ th {
   letter-spacing: 1px;
 }
 
+#splide01-list {
+  height: 350px;
+  justify-content: space-around;
+}
+
 .splide__slide img {
   height: 300px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 0.3;
   transform: scale(0.8);
   transition: 0.7s;

@@ -22,7 +22,7 @@
                           ?>
                      </div>
                      <div class="detail__link">
-                        <a href="">
+                        <a href="<?php the_field('link') ;?>">
                             サイトを見る
                         </a>
                      </div>
