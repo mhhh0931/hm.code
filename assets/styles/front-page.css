@@ -431,6 +431,11 @@ th {
 .mainvisual__p {
   font-size: 48px;
 }
+@media screen and (max-width: 980px) {
+  .mainvisual__p {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mainvisual__p {
     font-size: 16px;
@@ -482,6 +487,12 @@ th {
     transform: none;
     transition: none;
     opacity: 1;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .splide__slide img {
+    height: 240px;
     margin-right: 20px;
   }
 }
@@ -711,6 +722,14 @@ th {
   .about__list {
     flex-direction: column;
     padding: 40px 60px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__list {
+    flex-direction: column;
+    padding: 40px 30px;
     justify-content: center;
     align-items: center;
   }

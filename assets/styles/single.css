@@ -456,6 +456,10 @@ th {
   font-size: 10px;
 }
 
+.detail__link:hover {
+  color: blue;
+}
+
 .detail__content {
   text-align: left;
   padding-top: 56px;
@@ -492,6 +496,8 @@ th {
 
 .detail__content--text {
   margin-bottom: 24px;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 .detail__button {

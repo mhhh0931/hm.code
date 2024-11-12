@@ -8,7 +8,7 @@
     margin: auto;
     padding-top: 200px;
 
-    @include g.breakPoint(tab){
+    @include g.breakPoint("tab"){
         padding-top: 120px;
       }
 }
@@ -32,11 +32,11 @@
 .detail__list {
     display: flex;
 
-    @include g.breakPoint(max){
+    @include g.breakPoint("max"){
         flex-direction: column;
         
       }
-      @include g.breakPoint(sp){
+      @include g.breakPoint("sp"){
         flex-direction: column;
         margin: 0px 16px;
       }
@@ -45,7 +45,7 @@
 .detail__item {
     position: relative;
     width: 48%;
-    @include g.breakPoint(max){
+    @include g.breakPoint("max"){
         width: 100%;
         object-fit: cover;
         text-align: center;
@@ -55,7 +55,7 @@
 
 .detail__img img {
 
-    @include g.breakPoint(sp){
+    @include g.breakPoint("sp"){
         width: 100%;
         object-fit: cover;
       }
@@ -66,15 +66,19 @@
     font-size: 10px;
 }
 
+.detail__link:hover{
+    color:blue;
+}
+
 .detail__content {
     text-align: left;
     padding-top: 56px;
     padding-right: 32px;
-    @include g.breakPoint(max){
+    @include g.breakPoint("max"){
         margin: 0px 100px;
         padding-right: 8px;
       }
-      @include g.breakPoint(sp){
+      @include g.breakPoint("sp"){
         margin: 0px 20px;
         padding-right: 8px;
       }
@@ -99,6 +103,8 @@
 
 .detail__content--text {
     margin-bottom: 24px;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 .detail__button {

@@ -36,6 +36,9 @@
 
 .mainvisual__p {
     font-size: 48px;
+    @include g.breakPoint("max"){
+      font-size: 32px;
+      }
     @include g.breakPoint("tab"){
       font-size: 16px;
       }
@@ -86,6 +89,10 @@
       opacity: 1;
       margin-right: 20px;
   }
+  @include g.breakPoint("tab"){
+    height: 240px; // タブレット用の高さ
+    margin-right: 20px;
+}
   }
 
   .splide__slide p {
@@ -317,6 +324,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    
+    @include g.breakPoint("sp"){
+      flex-direction: column;
+      padding: 40px 30px;
+       justify-content: center;
+       align-items: center;
+   }
       }
 
 

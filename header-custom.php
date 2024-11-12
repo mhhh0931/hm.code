@@ -4,7 +4,7 @@
 <head>
 <title><?php bloginfo();?></title>
 <meta charset="UTF-8">
-<meta name="description" content="<?php bloginfo( 'description' ); ?>" >
+<meta name="description" content="お客様の目標を達成できるWebサイト作りをしています。Wordpressによるオリジナルテーマや、既存テーマを用いてのサイト作りなど幅広く対応しています。" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
