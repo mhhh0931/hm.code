@@ -34,7 +34,7 @@
 
     @include g.breakPoint(max){
         flex-direction: column;
-        margin: 0px 50px;
+        
       }
       @include g.breakPoint(sp){
         flex-direction: column;
@@ -45,7 +45,7 @@
 .detail__item {
     position: relative;
     width: 48%;
-    @include g.breakPoint(tab){
+    @include g.breakPoint(max){
         width: 100%;
         object-fit: cover;
         text-align: center;

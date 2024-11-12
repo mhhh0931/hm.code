@@ -422,7 +422,6 @@ th {
 @media screen and (max-width: 980px) {
   .detail__list {
     flex-direction: column;
-    margin: 0px 50px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -436,7 +435,7 @@ th {
   position: relative;
   width: 48%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 980px) {
   .detail__item {
     width: 100%;
     -o-object-fit: cover;

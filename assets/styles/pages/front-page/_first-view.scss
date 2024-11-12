@@ -64,8 +64,11 @@
     letter-spacing: 1px;
 }
 #splide01-list {
-  height: 350px;
+  height: 320px;
   justify-content: space-around;
+  @include g.breakPoint("sp"){
+   height: 280px;
+}
 }
 
 .splide__slide img {
@@ -75,9 +78,13 @@
   opacity: .3;
   transform: scale(.8);
   transition: .7s;
-  @include g.breakPoint("tab"){
+  @include g.breakPoint("sp"){
       width: 80%;
       height: 240px; // タブレット用の高さ
+      transform: none;
+      transition: none;
+      opacity: 1;
+      margin-right: 20px;
   }
   }
 
@@ -117,11 +124,17 @@
   .splide__arrow.splide__arrow--next {
     position: absolute;
     right: -5px;
+    @include g.breakPoint("tab"){
+     right: 10px;
+    }
 }
 
 .splide__arrow.splide__arrow--prev {
   position: absolute;
   left: -5px;
+  @include g.breakPoint("tab"){
+    left: 10px;
+  }
 }
   
   .splide__pagination__page.is-active{
