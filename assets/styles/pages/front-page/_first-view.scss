@@ -74,13 +74,18 @@
 }
 }
 
-.splide__slide img {
-  height: 300px; // 固定の高さを設定
-  width: 100%;
-  // object-fit: cover; // アスペクト比を保ちながらカバー
-  opacity: .3;
-  transform: scale(.8);
-  transition: .7s;
+  .splide__slide img {
+    height: 300px; // 固定の高さを設定
+    width: 100%;
+    object-fit: cover; // アスペクト比を保ちながらカバー
+    opacity: .3;
+    transform: scale(.8);
+    transition: .7s;
+    @include g.breakPoint("tab"){
+        width: 80%;
+        height: 240px; // タブレット用の高さ
+    }
+}
   @include g.breakPoint("sp"){
       width: 80%;
       height: 240px; // タブレット用の高さ
@@ -93,7 +98,7 @@
     height: 240px; // タブレット用の高さ
     margin-right: 20px;
 }
-  }
+
 
   .splide__slide p {
     opacity: .3;
