@@ -83,7 +83,7 @@
     transition: .7s;
 
 
-}
+
 @include g.breakPoint("sp") {
   width: 80%;
   height: 240px; // タブレット用の高さ
@@ -91,14 +91,7 @@
   transition: none;
   opacity: 1;
   margin-right: 20px;
-
-
-
-    @include g.breakPoint("tab"){
-        width: 80%;
-        height: 240px; // タブレット用の高さ
-    }
-
+}
   @include g.breakPoint("sp"){
       width: 80%;
       height: 240px; // タブレット用の高さ
@@ -107,8 +100,8 @@
       opacity: 1;
       margin-right: 20px;
   }
-}
 
+  }
   .splide__slide p {
     opacity: .3;
     font-size: 10px;
