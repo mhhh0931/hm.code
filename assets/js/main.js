@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {new Splide(".splide",
     },
   
     breakpoints: {
-      500: {
-        type:"loop",
+      780: {
         perPage: 1,
         fixedWidth: '80%', // モバイル時の幅
         fixedHeight: 240, // モバイル時の高さ
