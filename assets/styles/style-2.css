@@ -885,7 +885,6 @@ th {
 .splide__slide img {
   height: 300px;
   width: 100%;
-  object-fit: cover;
   opacity: 0.3;
   transform: scale(0.8);
   transition: 0.7s;

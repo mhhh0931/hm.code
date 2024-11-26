@@ -77,7 +77,7 @@
   .splide__slide img {
     height: 300px; // 固定の高さを設定
     width: 100%;
-    object-fit: cover; // アスペクト比を保ちながらカバー
+    // object-fit: cover; // アスペクト比を保ちながらカバー
     opacity: .3;
     transform: scale(.8);
     transition: .7s;
